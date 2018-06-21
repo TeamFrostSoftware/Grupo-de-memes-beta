@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Client Jobs</title>
+</head>
+<body>
+	<center>
+		<h1>Client Jobs Payments Checklist</h1>
+	</center>
+
+	<form>
+		<table>
+
+			<tr>
+				<td>
+					<h3><label for="Client">Client: </label></h3>
+				</td>
+
+				<td>
+					<input type="text" name="Client" maxlength="50" size="30">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h3><label for="Month">Month: </label></h3>
+					
+				</td>
+
+				<td>
+					<input type="text" name="Month" maxlength="50" size="30">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="Email">Email: </label>
+				</td>
+
+				<td>
+					<input type="text" name="Email" maxlength="50" size="30">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="Address">Address: </label>
+				</td>
+
+				<td>
+					<input type="text" name="Address" maxlength="50" size="30">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="Telephone">Telephone: </label>
+				</td>
+
+				<td>
+					<input type="text" name="Telephone" maxlength="12" size="30">
+				</td>
+			</tr>
+
+		</table>
+
+		<table border="5px" style="text-align: center;">
+			<thead>
+				<tr>
+					<td>
+						<label for="Description">Description</label>
+					</td>
+
+					<td>
+						<label for="JobD">Job Date</label>
+					</td>
+
+					<td>
+						<label for="Invoice">Invoice Number</label>
+					</td>
+
+					<td>
+						<label for="TotalD">Total Due</label>
+					</td>
+
+					<td>
+						<label for="Down">Down Payment</label>
+					</td>
+
+					<td>
+						<label for="Payment">Payment Date Check#</label>
+					</td>
+
+					<td>
+						<label for="Notes">Notes</label>
+					</td>
+
+					<td>
+						<label for="TotalP">Total Payment</label>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<textarea name="Description" rows="10" cols="20"></textarea>
+					</td>
+
+					<td>
+						<input type="Date" name="JobD">
+					</td>
+
+					<td>
+						<input type="text" name="Invoice">
+					</td>
+
+					<td>
+						<input type="number" name="TotalD" value="0" min="0" step="0.01" max="">
+					</td>
+
+					<td>
+						<input type="number" name="Down" value="0" min="0" step="0.01" max="">
+					</td>
+
+					<td>
+						<input type="Date" name="Payment">
+					</td>
+
+					<td>
+						<textarea name="Notes" rows="10" cols="20">Notes</textarea>
+					</td>
+
+					<td>
+						<input type="number" name="TotalP" value="0" min="0" step="0.01" max="">
+					</td>
+					<!--Seria total due menos down payment es igual a la deuda total(Total payment)-->
+				</tr>
+			</tbody>
+		</table>
+
+		<table>
+			<tr>
+			<td>
+				<label for="total">Total $: </label>
+				<input type="number" name="total" value="0" min="0" step="0.01" max="">
+			</td>
+		</tr>
+
+			<tr>
+				<td>
+					<input type="submit" value="Submit">
+				</td>
+			</tr>
+		</table>
+
+	</form>
+</body>
+</html>
